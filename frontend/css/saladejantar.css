@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #b0bc83;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 10px;
+    color: black;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .galerry {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    background: rgb(254, 255, 214);
+  }
+  
+  .content:houver {
+    box-shadow: 0 3px 0px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  p {
+    text-align: center;
+    color: BLACK;
+    padding-top: 0 8px;
+  }
+  
+  h6 {
+    font-size: 26px;
+    text-align: center;
+    color: #303001;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+  
+  li {
+    padding-top: 5px;
+  }
+  
+  .fa {
+    font-size: 26px;
+    transition: 0.4s;
+    margin: 3px;
+  }
+  
+  .botao {
+    background-color: #adb67c; /* Cor de fundo */
+    border: none; /* Remover a borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-block; /* Faz o botão comportar-se como um elemento de bloco, mas respeitando o conteúdo */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor ao passar por cima */
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+  
+  .carrinho {
+    background-color: #303001;
+  }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="../css/carrinhoSALA.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav__bar container">
+            <h1><a href="#" class="logo">my<span>Móveis</span></a></h1>
+
+            <div class="nav" id="nav">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a href="#" class="nav__link">sofá</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">poltronas</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">cadeiras</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">acessórios</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">coleção</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">inpiração</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__login">
+                <div class="nav__user">
+                    <a href="../login.php"><i class='bx bx-user'></i></a>
+                </div>
+                <div class="nav__cart">
+                    <a href="#"><i class='bx bxs-cart'></i></a>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <button id="dark-mode-toggle">Modo Escuro</button> -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle">Modo Escuro</button>
+
+   
+    <div id="produtos">
+        <!-- Os produtos ficam entre esses comentários -->
+        <div class="produto">
+            <img src="../img/img sala/cadeira sala de estar.jpg" alt="Periférico 1">
+            <h2><B></B>CADEIRA SALA DE ESTAR</B></h2>
+            <p>R$ 800</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto1')">+</button>
+                <input type="number" id="quantidadeProduto1" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto1')">-</button>
+            </div>
+            <button onclick="adicionarAoCarrinho('Placa de vídeo', 800, 'quantidadeProduto1')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../img/img sala/criar do mudo amarelo.jpg" alt="Periférico 2">
+            <h2>CRIAR DO MUNDO</h2>
+            <p>R$ 1200</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto2')">+</button>
+                <input type="number" id="quantidadeProduto2" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto2')">-</button>
+            </div>
+                    
+            <button onclick="adicionarAoCarrinho('Processador', 1200, 'quantidadeProduto2')">Adicionar ao Carrinho</button>
+            
+        </div>
+        <div class="produto">
+            <img src="../img/img sala/criar do mundo.webp" alt="Periférico 3">
+            <h2>CRIAR DO MUNDO</h2>
+            <p>R$ 899,99</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto3')">+</button>
+                <input type="number" id="quantidadeProduto3" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto3')">-</button>
+            </div>
+            <button onclick="adicionarAoCarrinho('Placa mãe', 899.99, 'quantidadeProduto3')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../img/img sala/estante de livros para sala de estar.webp" alt="Periférico 4">
+            <h2>ESTANTE</h2>
+            <p>R$ 350</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto4')">+</button>
+                <input type="number" id="quantidadeProduto4" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto4')">-</button>
+            </div>
+            <button onclick="adicionarAoCarrinho('SSD M2', 350, 'quantidadeProduto4')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../img/img sala/estante preta de livros.avif" alt="Periférico 5">
+            <h2>ESTANTE PRETA</h2>
+            <p>R$ 4.500</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto5')">+</button>
+                <input type="number" id="quantidadeProduto5" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto5')">-</button>
+            </div>
+            <button onclick="adicionarAoCarrinho('PC Completo', 4500, 'quantidadeProduto5')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../img/img sala/mesa branca.webp" alt="Periférico 6">
+            <h2>MESA BRANCA</h2>
+            <p>R$ 750</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto6')">+</button>
+                <input type="number" id="quantidadeProduto6" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto6')">-</button>
+            </div>
+            <button onclick="adicionarAoCarrinho('Fonte Alimentação', 750, 'quantidadeProduto6')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../img/img sala/PAINEL.png" alt="Periférico 7">
+            <h2>RAQUE</h2>
+            <p>R$ 199</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto7')">+</button>
+                <input type="number" id="quantidadeProduto7" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto7')">-</button>
+            </div>
+            <button onclick="adicionarAoCarrinho('Memória Ram', 199, 'quantidadeProduto7')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../img/img sala/raque sala de estar.webp" alt="Periférico 8">
+            <h2>PAINEL</h2>
+            <p>R$ 45</p>
+            <div class="controles">
+                <button onclick="incrementarQuantidade('quantidadeProduto8')">+</button>
+                <input type="number" id="quantidadeProduto8" value="1" min="1">
+                <button onclick="decrementarQuantidade('quantidadeProduto8')">-</button>
+            </div>
+            <button onclick="adicionarAoCarrinho('Cooler Fan', 45, 'quantidadeProduto8')">Adicionar ao Carrinho</button>
+        </div>
+        
+        
+            
+        <!-- Só adicione produtos daqui pra cima -->
+    </div>
+
+    <div id="carrinho-lateral">
+        <h2>Itens no Carrinho</h2>
+        <ul id="carrinho-lateral-lista">
+            <!-- Itens do Carrinho serão adicionados aqui dinamicamente -->
+        </ul>
+        <div id="total-carrinho-lateral">Total: R$ 0,00</div>
+        <button onclick="limparCarrinho()" id="botao-carrinho">Limpar Carrinho</button>
+    </div>
+
+    <div id="carrinho-icon"onclick="abrirOuFecharCarrinho()">0</div>
+    <div class="footer-bottom">
+        
+        <p>&copy; 2024  <br> Escola Técnica da Ceilândia - ETC <br>Todos os direitos reservados aos desenvolvedores desta página</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

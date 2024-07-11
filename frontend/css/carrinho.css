@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #b0bc83; /* Cor de fundo padrão */
+    color: #333; /* Cor do texto padrão */
+}
+.navbar {
+    background-color: green;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-brand span {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+}
+
+.btn-sair {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    font-weight: bold;
+}
+
+.btn-sair:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.header {
+    width: 100%;
+    padding: 1rem;
+}
+
+.dark-mode {
+    background-color: #333; /* Cor de fundo no modo escuro */
+    color: black; /* Cor do texto no modo escuro */
+}
+
+.dark-mode h1{
+    color: white;
+}
+
+/* Estilos adicionais para o modo escuro aqui */
+.dark-mode .produto h2,
+.dark-mode .produto p {
+    color: rgb(0, 0, 0); /* Cor do texto no modo escuro */
+}
+
+/* Estilos para o botão de alternância do modo escuro */
+.dark-mode-toggle {
+    background-color: #97be29; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 0 0 5px; /* Arredondamento dos cantos do botão */
+    cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.dark-mode-toggle:hover {
+    background-color: #3f5601; /* Cor de fundo do botão ao passar o mouse */
+}
+/* Até aqui foi só formatação para o modo escuro */
+
+h1 {
+    text-align: center;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinhar as divs de produtos em coluna */
+}
+
+.produto {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    background: rgb(244, 255, 201);
+}
+
+.produto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto; /* Centralizar a imagem */
+    margin-bottom: 10px;
+}
+
+.produto h2,
+.produto p {
+    margin: 0;
+}
+
+.produto a{
+    text-decoration: none;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+}
+
+.controles button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none;
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+
+.controles button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.produto p {
+    font-size: 16px;
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px;
+}
+
+.produto button {
+    margin-top: 10px;
+    background-color: #5f783a; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.produto button:hover {
+    background-color: #6a8810; /* Cor de fundo ao passar o mouse */
+}
+
+input[type="number"] {
+    width: 40px;
+    height: 27px;
+    margin-top: 9px;
+    padding: 5px;
+    border: 1px solid #218838; /* Cor da borda */
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;            
+    transition: border-color 0.3s ease; /* Transição suave */
+}
+
+#carrinho-icon {
+    position: fixed;
+    top: 20px; /* Posição na parte superior */
+    right: 20px; /* Posição na parte direita */
+    background-color:#97be29;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+    
+}
+
+#carrinho-lateral {
+    width: 300px;
+    background-color:  rgb(244, 255, 201);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(133, 56, 56, 0.5);
+    z-index: 999;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#carrinho-lateral.aberto {
+    display: block;
+}
+
+#carrinho-lateral-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#carrinho-lateral-lista li {
+    background-color:#97be29;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.remover-item {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.footer-bottom {
+    background-color: #3f5601;;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}

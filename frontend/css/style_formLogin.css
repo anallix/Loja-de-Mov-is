@@ -1,0 +1,129 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b0bc83;
+}
+
+/* Estilos da caixa principal */
+.box {
+    color: green;
+    background-color:#dc3545;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para o formulário */
+fieldset {
+    border: 2px solid ;
+    padding: 50px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    background-color:lightyellow;
+}
+
+legend {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para os inputs */
+.inputBox {
+    position: relative;
+    margin-bottom: 9px;
+ 
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 6px 0;
+    transition: border-bottom-color 0.3s;
+}
+
+.labelInput {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    color: rgba(255, 255, 255, 0.7);
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+    pointer-events: none;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:not(:placeholder-shown) ~ .labelInput {
+    top: -12px;
+    font-size: 12px;
+    color: black;
+}
+
+/* Estilos para o campo de data */
+#data_nascimento {
+    background: none;
+    border: 1px solid black;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+
+/* Estilos para os radio buttons */
+.radioContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.radioContainer label {
+    color: black;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para o botão de submit */
+#submit {
+   background-color:yellow;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-image 0.3s;
+    margin-top: 20px;
+}
+label {
+display: inline-block;
+margin-right: 10px; /* Adjust spacing as needed */
+}
+
+input[type="radio"] {
+margin-right: 5px; /* Adjust spacing as needed */
+}
+
+
